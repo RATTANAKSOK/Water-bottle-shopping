@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkcyan;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav ul {
+    display: none;
+}
+
+.logo {
+    width: 25%;
+    float: left;
+    padding: 20px;
+}
+
+nav {
+    width: 75%;
+    float: right;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: aliceblue;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.icon {
+    padding: 15px;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+    background-color: aliceblue;
+}
+
+.banner {
+    clear: both;
+    height: 400px;
+    background-image: url('img/banner.jpeg');
+    background-position: center;
+    background-size: cover;
+    border: 3px solid white;
+    animation: slideshow 5s linear infinite ;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.375);
+    text-align: center;
+    padding-top: 160px;
+    color: aliceblue;
+}
+
+
+.w-card {
+    width: 300px;
+    height: 500px;
+    background-color: aquamarine;
+    display: inline-block;
+    border: 2px solid;
+    margin: 0 auto;
+    overflow: hidden;
+    animation: changecolor 5s linear infinite ;
+}
+
+.w-card img {
+    width: 100%;
+}
+
+@keyframes slideshow {
+    from {
+        background-image: url('img/banner.jpeg');
+    }
+    to {
+        background-image: url('img/best-water-bottles.webp');
+    }
+}
+
+@keyframes changecolor {
+    0% {
+        background-color: aquamarine; 
+    }
+    25% {
+        background-color: aqua;
+    }
+    50% {
+        background-color: greenyellow;
+    }
+    75% {
+        background-color: green;
+    }
+    100% {
+        background-color: bisque;
+    }
+}
+
+h2 {
+    color: aliceblue;
+}
+
+iframe {
+    border: 2px solid greenyellow;
+    border-radius: 15px;
+}
+
+form {
+    background-color: blanchedalmond;
+}
+
+.footer {
+    margin: 0 auto;
+    background-color: rgb(136, 127, 255);
+}
